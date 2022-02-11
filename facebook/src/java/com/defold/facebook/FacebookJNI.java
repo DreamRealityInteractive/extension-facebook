@@ -96,13 +96,13 @@ class FacebookAppJNI {
     public void activate() {
         String s = String.format("activateApp: activity %s   appid: %s", this.activity, this.appId);
         Log.d(TAG, s);
-        AppEventsLogger.activateApp(this.activity, this.appId);
+        AppEventsLogger.activateApp(this.activity.getApplication());
     }
 
     public void deactivate() {
         String s = String.format("deactivateApp: activity %s   appid: %s", this.activity, this.appId);
         Log.d(TAG, s);
-        AppEventsLogger.deactivateApp(this.activity, this.appId);
+        AppEventsLogger.deactivateApp(this.activity.getApplication());
     }
 }
 
