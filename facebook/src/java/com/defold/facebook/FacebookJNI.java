@@ -98,12 +98,6 @@ class FacebookAppJNI {
         Log.d(TAG, s);
         AppEventsLogger.activateApp(this.activity.getApplication());
     }
-
-    public void deactivate() {
-        String s = String.format("deactivateApp: activity %s   appid: %s", this.activity, this.appId);
-        Log.d(TAG, s);
-        AppEventsLogger.deactivateApp(this.activity.getApplication());
-    }
 }
 
 class FacebookJNI {
