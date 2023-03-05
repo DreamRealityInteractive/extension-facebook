@@ -312,8 +312,6 @@ public class FacebookActivity extends Activity {
                 ShareDialog shareDialog = new ShareDialog(this);
                 ShareLinkContent.Builder content = new ShareLinkContent.Builder()
                     .setContentUrl(Uri.parse(dialogParams.getString("link", "")))
-                    .setImageUrl(Uri.parse(dialogParams.getString("picture", "")))
-                    .setContentDescription(dialogParams.getString("description", ""))
                     .setPlaceId(dialogParams.getString("place_id", ""))
                     .setRef(dialogParams.getString("ref", ""));
 
