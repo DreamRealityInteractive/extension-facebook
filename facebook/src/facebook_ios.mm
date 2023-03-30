@@ -9,6 +9,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
+@import FBSDKGamingServicesKit;
 #import <objc/runtime.h>
 
 #include "facebook_private.h"
